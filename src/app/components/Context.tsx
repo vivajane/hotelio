@@ -10,7 +10,10 @@ type Hotels = {
     price: number,
     image: string,
     slug: string,
-    amenities: string[]
+    amenities: string[],
+    secAmenities: { icon: React.ElementType; text: string }[];
+    currency: string,
+    previewImage: string[]
 }
 
 type ContextType = {

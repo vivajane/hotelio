@@ -1,3 +1,16 @@
+import { FaWifi } from "react-icons/fa";
+import { MdOutlineFreeBreakfast } from "react-icons/md";
+import { TbSwimming } from "react-icons/tb";
+import { CgGym } from "react-icons/cg";
+import { FaUmbrellaBeach } from "react-icons/fa";
+import { GiJugglingClubs } from "react-icons/gi";
+import { TbMassage } from "react-icons/tb";
+import { GoCodespaces } from "react-icons/go";
+import { FaRegChessPawn } from "react-icons/fa6";
+import { FaCoffee} from 'react-icons/fa'
+
+
+
 export const rooms = [
   {
     id: 1,
@@ -16,6 +29,16 @@ export const rooms = [
       "City View",
       "Smart Home Controls",
     ],
+    secAmenities: [
+      {icon: FaWifi, text: "free wifi"},
+      {icon: MdOutlineFreeBreakfast, text: "complimentary coffee"},
+      {icon: TbSwimming, text: "pool access"},
+    ],
+    previewImage: [
+      "https://images.pexels.com/photos/7563687/pexels-photo-7563687.jpeg",
+      "https://images.pexels.com/photos/2662875/pexels-photo-2662875.jpeg",
+      "https://images.pexels.com/photos/52988/swim-water-diving-underwater-52988.jpeg",
+    ]
   },
   {
     id: 2,
@@ -34,12 +57,23 @@ export const rooms = [
       "High-Speed Wi-Fi",
       "Complimentary Breakfast",
     ],
+     secAmenities: [
+      {icon: TbSwimming, text: "pool access"},
+      {icon: TbMassage, text: "massage"},
+      {icon: GiJugglingClubs, text: "juggling clubs"},
+    ],
+    previewImage: [
+      "https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg",
+      "https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg",
+      "https://images.pexels.com/photos/2114365/pexels-photo-2114365.jpeg",
+    ]
   },
   {
     id: 3,
     name: "Deluxe Room",
     slug: "deluxe-room",
     description:
+
       "Designed for modern comfort, the Deluxe Room offers stunning interiors, luxury bedding, and a warm ambiance. Ideal for couples or solo travelers looking for a relaxing retreat.",
     price: 40000,
     currency: "USD",
@@ -52,6 +86,17 @@ export const rooms = [
       "Mini Bar",
       "Pool Access",
     ],
+      
+     secAmenities: [
+      {icon: GoCodespaces, text: "codespaces"},
+      {icon: FaRegChessPawn, text: "chess"},
+      {icon: FaCoffee, text: "complimentary coffee"},
+    ],
+    previewImage: [
+      "https://images.pexels.com/photos/29087897/pexels-photo-29087897.jpeg",
+      "https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg",
+      "https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg",
+    ]
   },
   {
     id: 4,
@@ -69,5 +114,15 @@ export const rooms = [
       "Work Desk",
       "24/7 Room Service",
     ],
+     secAmenities: [
+      {icon: FaWifi, text: "free wifi"},
+      {icon: FaUmbrellaBeach, text: "beach access"},
+      {icon: TbSwimming, text:"pool access"},
+    ],
+    previewImage: [
+      "https://images.pexels.com/photos/7563687/pexels-photo-7563687.jpeg",
+      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+      "https://images.pexels.com/photos/1827354/pexels-photo-1827354.jpeg",
+    ]
   },
 ];

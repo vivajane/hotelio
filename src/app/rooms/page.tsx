@@ -11,9 +11,9 @@ const RoomsPage = () => {
   }
   const { hotels } = context
   return (
-    <div className='bg-[#888484]'>
+    <div className=''>
       <PageProps title="Rooms" />
-      <div className='flex py-14 flex-col gap-10'>
+      <div className='grid grid-cols-2 py-14 gap-10'>
         {hotels?.map((hotel) => (
           <div className='  px-12 ' key={hotel.id}>
             <Rooms {...hotel} />
