@@ -33,7 +33,7 @@ const Rooms = (props: Props) => {
                         </div>
                     </div>
 
-                    <p className=' mt-1 text-[#FFB800] text-xl font-bold'>$ {props.price}<span className='text-gray-500 font-semibold'> /night</span></p>
+                    <p className=' mt-1 text-[#FFB800] text-xl font-bold'>₦{props.price}<span className='text-gray-500 font-semibold'> /night</span></p>
                 </div>
             </div>
 

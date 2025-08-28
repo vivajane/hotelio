@@ -10,7 +10,7 @@ type Hotels = {
     price: number,
     image: string,
     slug: string,
-    amenities: string[],
+   
     secAmenities: { icon: React.ElementType; text: string }[];
     currency: string,
     previewImage: string[]
@@ -21,6 +21,8 @@ type ContextType = {
     setHotels: React.Dispatch<React.SetStateAction<Hotels[]>>
     error: string | null
     setError: React.Dispatch<React.SetStateAction<string | null>>
+    selected: Hotels | null
+    setSelected: React.Dispatch<React.SetStateAction<Hotels | null>>
 
 }
 
@@ -32,6 +34,8 @@ export const AppContext = createContext<ContextType | null>(null)
 const Context = ({ children }: Props) => {
     const [hotels, setHotels] = useState<Hotels[]>([])
     const [error, setError] = useState<string | null>(null)
+    const [selected, setSelected] = useState<Hotels | null>(null)
+    
 
     useEffect(() => {
         const getHotels = async () => {
@@ -53,8 +57,9 @@ const Context = ({ children }: Props) => {
         hotels,
         setHotels,
         error,
-        setError
-
+        setError,
+        selected,
+        setSelected
     }
     return (
         <AppContext.Provider value={contextValue}>

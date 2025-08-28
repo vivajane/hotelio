@@ -93,7 +93,7 @@ export const rooms = [
       {icon: FaCoffee, text: "complimentary coffee"},
     ],
     previewImage: [
-      "https://images.pexels.com/photos/29087897/pexels-photo-29087897.jpeg",
+      "https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg",
       "https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg",
       "https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg",
     ]
