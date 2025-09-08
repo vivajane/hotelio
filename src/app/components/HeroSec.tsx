@@ -9,7 +9,7 @@ const HeroSec = () => {
         <p data-aos="fade-right">Welcome to Hotelio, your trusted gateway to comfort, elegance, and unforgettable stays. Whether you’re planning a quick getaway, a family vacation, or a business trip, Hotelio makes it simple to discover and book the perfect space for every occasion.</p>
         <p>From cozy budget rooms to luxury suites, we connect you to stays designed for every style and need. With secure booking, easy payment, and a touch of convenience, Hotelio ensures your next trip is not just a journey, but an experience worth remembering.</p>
       </div>
-      <div data-aos="fade-left" className='flex lg:w-1/2  w-full flex-col gap-6'>
+      <div data-aos="fade-up" className='flex lg:w-1/2  w-full flex-col gap-6'>
         <Image className='rounded-2xl' src="https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg" alt="Hotelio Hotels" width={500} height={500} />
       
       </div>
